@@ -218,6 +218,7 @@ export class ProductTypeControllerBase {
           },
         },
 
+        secondName: true,
         sku: true,
         updatedAt: true,
       },

@@ -22,6 +22,7 @@ export const CatalogCreate = (props: CreateProps): React.ReactElement => {
         >
           <SelectInput optionText={ProductTypeTitle} />
         </ReferenceInput>
+        <TextInput label="second name" source="secondName" />
         <TextInput label="SKU" source="sku" />
       </SimpleForm>
     </Create>

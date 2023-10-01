@@ -22,6 +22,7 @@ export const CatalogEdit = (props: EditProps): React.ReactElement => {
         >
           <SelectInput optionText={ProductTypeTitle} />
         </ReferenceInput>
+        <TextInput label="second name" source="secondName" />
         <TextInput label="SKU" source="sku" />
       </SimpleForm>
     </Edit>

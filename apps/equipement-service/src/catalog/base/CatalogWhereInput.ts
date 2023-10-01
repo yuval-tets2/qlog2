@@ -73,6 +73,17 @@ class CatalogWhereInput {
   @Field(() => StringNullableFilter, {
     nullable: true,
   })
+  secondName?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
   sku?: StringNullableFilter;
 }
 

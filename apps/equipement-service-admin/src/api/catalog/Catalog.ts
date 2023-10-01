@@ -6,6 +6,7 @@ export type Catalog = {
   id: string;
   prodcutName: string | null;
   productType?: ProductType | null;
+  secondName: string | null;
   sku: string | null;
   updatedAt: Date;
 };

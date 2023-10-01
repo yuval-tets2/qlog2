@@ -7,5 +7,6 @@ export type CatalogWhereInput = {
   id?: StringFilter;
   prodcutName?: StringNullableFilter;
   productType?: ProductTypeWhereUniqueInput;
+  secondName?: StringNullableFilter;
   sku?: StringNullableFilter;
 };

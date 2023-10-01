@@ -73,6 +73,17 @@ class Catalog {
   @Field(() => String, {
     nullable: true,
   })
+  secondName!: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
   sku!: string | null;
 
   @ApiProperty({

@@ -25,6 +25,7 @@ model Catalog {
   prodcutName   String?
   productType   ProductType? @relation(fields: [productTypeId], references: [id])
   productTypeId String?
+  secondName    String?
   sku           String?
   updatedAt     DateTime     @updatedAt
 }
