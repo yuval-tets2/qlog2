@@ -69,6 +69,7 @@ export class CatalogControllerBase {
           },
         },
 
+        secondName: true,
         sku: true,
         updatedAt: true,
       },
@@ -103,6 +104,7 @@ export class CatalogControllerBase {
           },
         },
 
+        secondName: true,
         sku: true,
         updatedAt: true,
       },
@@ -138,6 +140,7 @@ export class CatalogControllerBase {
           },
         },
 
+        secondName: true,
         sku: true,
         updatedAt: true,
       },
@@ -190,6 +193,7 @@ export class CatalogControllerBase {
             },
           },
 
+          secondName: true,
           sku: true,
           updatedAt: true,
         },
@@ -233,6 +237,7 @@ export class CatalogControllerBase {
             },
           },
 
+          secondName: true,
           sku: true,
           updatedAt: true,
         },

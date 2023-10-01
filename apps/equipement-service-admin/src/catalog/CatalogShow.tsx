@@ -24,6 +24,7 @@ export const CatalogShow = (props: ShowProps): React.ReactElement => {
         >
           <TextField source={PRODUCTTYPE_TITLE_FIELD} />
         </ReferenceField>
+        <TextField label="second name" source="secondName" />
         <TextField label="SKU" source="sku" />
         <DateField source="updatedAt" label="Updated At" />
       </SimpleShowLayout>

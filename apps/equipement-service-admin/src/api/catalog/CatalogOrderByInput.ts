@@ -6,6 +6,7 @@ export type CatalogOrderByInput = {
   id?: SortOrder;
   prodcutName?: SortOrder;
   productTypeId?: SortOrder;
+  secondName?: SortOrder;
   sku?: SortOrder;
   updatedAt?: SortOrder;
 };
