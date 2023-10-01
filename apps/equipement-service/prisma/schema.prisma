@@ -1,0 +1,43 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Catalog {
+  createdAt     DateTime     @default(now())
+  description   String?
+  id            String       @id @default(cuid())
+  prodcutName   String?
+  productType   ProductType? @relation(fields: [productTypeId], references: [id])
+  productTypeId String?
+  sku           String?
+  updatedAt     DateTime     @updatedAt
+}
+
+model ProductType {
+  catalogs  Catalog[]
+  createdAt DateTime             @default(now())
+  id        String               @id @default(cuid())
+  name      EnumProductTypeName?
+  updatedAt DateTime             @updatedAt
+}
+
+enum EnumProductTypeName {
+  Normal
+  Special
+}
